@@ -1,0 +1,42 @@
+{
+  "name": "mtoolkit/mtoolkit-cache",
+  "version": "0.0.2",
+  "description": "The cache module of MToolkit framework",
+  "keywords": ["framework","toolkit", "Qt", ".NET", "web framework", "php", "fast", "simple", "free", "library"],
+  "type": "library",
+  "homepage": "http://mpstyle.github.io/MToolkit/",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Michele Pagnin",
+      "email": "pagnin.michele@gmail.com",
+      "homepage": "http://mpmp.altervista.org",
+      "role": "Main Developer"
+    }
+  ],
+  "support": {
+    "email": "pagnin.michele@gmail.com"
+  },
+
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "../mtoolkit-core/"
+    },
+    {
+      "type": "vcs",
+      "url": "../mtoolkit-model/"
+    }
+  ],
+
+  "require": {
+    "php": ">=5.3.0",
+    "mtoolkit/mtoolkit-core": "dev-master",
+    "mtoolkit/mtoolkit-model": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "mtoolkit\\cache  \\": "./src/"
+    }
+  }
+}
