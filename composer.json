@@ -2,7 +2,10 @@
   "name": "mtoolkit/mtoolkit-cache",
   "version": "0.0.2",
   "description": "The cache module of MToolkit framework",
-  "keywords": ["framework","toolkit", "Qt", ".NET", "web framework", "php", "fast", "simple", "free", "library"],
+  "keywords": [
+    "framework","toolkit", "Qt", ".NET", "web framework", "php", "fast", "simple", "free", "library",
+    "cache", "caching"
+  ],
   "type": "library",
   "homepage": "http://mtoolkit.github.io/mtoolkit/",
   "license": "LGPL-3.0+",
@@ -19,15 +22,19 @@
   },
   "require": {
     "php": ">=5.3.0",
-    "mtoolkit/mtoolkit-core": "dev-master",
-    "mtoolkit/mtoolkit-model": "dev-master"
+    "mtoolkit/mtoolkit-core": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "5.1.*"
   },
   "autoload": {
     "psr-4": {
-      "mtoolkit\\cache  \\": "./src/"
+      "mtoolkit\\cache\\": "./src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "mtoolkit\\cache\\test\\": "./test/"
     }
   }
 }
